@@ -49,7 +49,7 @@ if __name__ == "__main__":
             help='The source CSV of landkreis aggregated Impfdata')
     parser.add_argument(
             '--dest',
-            default='./out.csv',
+            default='./Aktuell_Deutschland_Quoten_COVID-19-Impfungen.csv',
             help='The destination CSV for the summed Impfquoten')
 
     args=parser.parse_args()
