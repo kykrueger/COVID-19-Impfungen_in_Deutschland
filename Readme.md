@@ -1,5 +1,5 @@
-:::info
-Dieser Datensatzfork wird nur zu Testzwecken verwendet und stellt keine Publikation des RKI dar. 
+:::info  
+Dieser Datensatzfork wird nur zu Testzwecken verwendet und stellt keine Publikation des RKI dar.   
 :::
 
 Datensatzdokumentation
