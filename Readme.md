@@ -1,3 +1,7 @@
+:::info
+Dieser Datensatzfork wird nur zu Testzwecken verwendet und stellt keine Publikation des RKI dar. 
+:::
+
 Datensatzdokumentation
 
 # COVID-19-Impfungen in Deutschland

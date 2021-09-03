@@ -34,7 +34,7 @@ def aggregate_impfquoten(impfquoten_path: str):
     return impf_landkreise.groupby(['LandkreisId_Impfort','Impfschutz'], as_index=False).sum()
 
 def load_geo_daten():
-    geo_landkreise = pd.read_csv("./Skripte/2020-06-30_Deutschland_Landkreise_GeoDemo.csv")
+    geo_landkreise = pd.read_csv("../Skripte/2020-06-30_Deutschland_Landkreise_GeoDemo.csv")
     geo_landkreise.drop(["Flaeche", "EW_maennlich", "EW_weiblich"], inplace=True, axis=1)
     geo_landkreise['IdLandkreis'] = geo_landkreise['IdLandkreis'].apply(lambda x: str(x) if len(str(x)) > 4 else '0{}'.format(x))
     return geo_landkreise
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument(
             '--source',
-            default="./Aktuell_Deutschland_Landkreise_COVID-19-Impfungen.csv",
+            default="../Aktuell_Deutschland_Landkreise_COVID-19-Impfungen.csv",
             help='The source CSV of landkreis aggregated Impfdata')
     parser.add_argument(
             '--dest',
