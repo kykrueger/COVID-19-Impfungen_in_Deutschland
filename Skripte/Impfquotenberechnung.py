@@ -15,6 +15,7 @@ def main(source_csv: str, target_csv: str):
             left_on='LandkreisId_Impfort',
             right_on='IdLandkreis')
     merged.drop(['LandkreisId_Impfort'], inplace=True, axis=1)
+    merged.reset_index(drop=True, inplace=True)
     merged.to_csv(target_csv)
 
 def aggregate_impfquoten(impfquoten_path: str):
