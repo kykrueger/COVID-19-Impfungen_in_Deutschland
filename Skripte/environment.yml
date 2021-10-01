@@ -1,0 +1,10 @@
+name: impfquoten
+channels:
+  - conda-forge
+dependencies:
+  - numpy=1.15.2
+  - numpy-base=1.15.2
+  - pandas=0.23.4
+  - pip=10.0.1
+  - python=3.5.6
+  - python-dateutil=2.8.2
