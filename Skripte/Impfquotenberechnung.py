@@ -88,7 +88,7 @@ if __name__ == "__main__":
             help='The source CSV of geo landkreis data')
     parser.add_argument(
             '--dest',
-            default='./out.csv',
+            default='./Aktuell_Deutschland_Quoten_COVID-19-Impfungen.csv',
             help='The destination CSV for the summed Impfquoten')
 
     args=parser.parse_args()
